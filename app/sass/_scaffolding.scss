@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 22px; 
-	line-height: 30px;
+	line-height: 1.5em;
 	font-family: "Montserrat", Arial, Helvetica, sans-serif;
 	color: #5b5b5c;
 	font-style: normal;
@@ -31,3 +31,92 @@ img {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+.button--empty {
+	display: block;
+	width: 294px;
+	height: 43px;
+	border: 2px solid #ffffff;
+	text-align: center;
+	padding-top: 12px;
+
+	color: #ffffff;
+	text-decoration: none;
+
+	text-transform: uppercase;
+}
+.button--black-border {
+	display: block;
+	width: 294px;
+	height: 43px;
+	border: 2px solid #000000;
+	text-align: center;
+	padding-top: 12px;
+
+	color: #000000;
+	text-decoration: none;
+
+	text-transform: uppercase;
+}
+.button--grey {
+	background-color: #dddcdc;
+	color: #000000;
+	font-size: 16px;
+	text-transform: uppercase;
+	width: 222px;
+	height: 60px;
+	border: none;
+}
+
+.main-nav, 
+.page-header__logo,
+.page-header__link {
+	z-index: 999;
+}
+
+.page-main {
+	padding-left: 123px;
+	padding-right: 123px;
+	margin-top: 68px;
+}
+
+section {
+	margin-top: 66px;
+}
+.section-intro {
+	display: block;
+	text-align: center;
+	font-size: 28px;
+	color: #5b5b5c;
+}
+
+.section-h2 {
+	font-size: 22px;
+	color: #c4c4c4;
+	font-weight: normal;
+}
+.section__caption {
+	text-transform: uppercase;
+	font-size: 30px;
+	color:#000000;
+	font-weight: normal;
+}
+
+.section__img {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+section p {
+	color: #5b5b5c;
+	padding-right: 36px;
+	margin-bottom: 50px;
+}
+
+@import "blocks/_page-header.scss";
+@import "blocks/_main-nav.scss";
+@import "blocks/_about.scss";
+@import "blocks/_photos.scss";
+@import "blocks/_offers.scss";
+@import "blocks/_next-tour.scss";
+@import "blocks/_booking.scss";
+@import "blocks/_page-footer.scss";

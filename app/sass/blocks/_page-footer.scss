@@ -1,0 +1,33 @@
+.page-footer {
+	width: 100%;
+	padding-top: 93px;
+	padding-bottom: 112px;
+}
+.page-footer__wrapper {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.page-footer__nav ul {
+	@include reset-list;
+	width: 570px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	text-transform: uppercase;
+}
+.page-footer__nav a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.page-footer__copyright {
+	width: 570px;
+	text-align: center;
+	margin-top: 64px;
+	text-transform: uppercase;
+	line-height: 0.8em;
+}

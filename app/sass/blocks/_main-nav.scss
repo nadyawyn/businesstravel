@@ -1,0 +1,28 @@
+.main-nav {
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+.main-nav ul {
+	@include reset-list;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	margin: 0 auto;
+	width: 433px;
+
+	font-size: 20px;
+}
+.main-nav__item {
+	flex-basis: 20%;
+	display: block;
+	padding-top: 42px;
+	padding-bottom: 42px;
+
+	color: #ffffff;
+
+	text-decoration: none;
+}
