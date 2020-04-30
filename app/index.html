@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Business Travel</title>
+		<link rel="stylesheet" href="css/normalize.css"> 
 		<link rel="stylesheet" href="css/style.min.css"> 
 	</head>
 	<body>
@@ -45,27 +46,148 @@
 		</header>
 		<main class="page-main">
 			<section class="about">
-
+				<div class="about__text"> 
+					<h2 class="about__h2 section-h2">
+						About us
+					</h2>
+					<strong>
+						We will turn your work into an exciting journey.
+					</strong>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Ac turpis egestas integer eget. Felis bibendum ut tristique et egestas quis ipsu.
+					</p>
+					<p>sa massa ultricies mi quis hendrerit dolor magna. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Lectus arcu bibendum at varius. In massa tempor nec feugiat nisl. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Adipiscing elit ut aliquam purus. Nunc pulvinar sapien et ligula ullam
+					</p>
+					<a href="#">More info</a>
+				</div>
+				<picture class="about__picture">
+					<source srcset="img/triumphal-arch.jpg" media="(min-width: 600px)">
+					<img src="img/triumphal-arch.jpg" alt="Triumphal Arch">
+				</picture>
 			</section>
 			<section class="photos">
+				<h2 class="photos__h2">Photos of our travels</h2>
+				<p class="photos__intro section-intro">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore   
+				</p>
+				<div class="photo-gallery">
+					<div class="photo-gallery__images">
 
+					</div>
+					<div class="photo-gallery__pagination">
+
+					</div>
+				</div>
 			</section>
 			<section class="offers">
-
+				<h2>Travel with our company</h2>
+				<p class="offers__intro section-intro">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore   
+				</p>
+				<div class="offers__item">
+					<picture>
+						<source srcset="img/premium-class-accommodation.jpg" media="(min-width:600px)">
+						<img src="img/premium-class-accommodation.jpg">
+					</picture>
+					<div class="offers__description">
+						<h3 class="offers__h3">
+							Comfortable premium class accommodations
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						</p>
+						<button class="button offers__button">
+							View photos
+						</button>
+					</div>
+				</div>
+				<div class="offers__item">
+					<picture>
+						<source srcset="img/surfer.jpg" media="(min-width:600px)">
+						<img src="img/surfer.jpg">
+					</picture>
+					<div class="offers__description">
+						<h3 class="offers__h3">
+							Weekly group entertainment and excursions
+						</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						</p>
+						<button class="button offers__button">
+							View photos
+						</button>
+					</div>
+				</div>
 			</section>
 			<section class="next-tour">
+				<picture class="next-tour__picture">
 
+				</picture>
+				<div class="next-tour__text">
+					<h2 class="next-tour__h2 section-h2">
+						Next tour
+					</h2>
+					<strong>
+						Unforgettable adventure in Filipinas
+					</strong>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Ac turpis egestas integer eget. Felis bibendum ut tristique et egestas quis ipsu.
+					</p>
+					<p>
+						sa massa ultricies mi quis hendrerit dolor magna. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Lectus arcu bibendum at varius. In massa tempor nec feugiat nisl. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Adipiscing elit ut aliquam purus. Nunc pulvinar sapien et ligula ullam
+					</p>
+					<p>
+						Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Mauris rhoncus aenean vel elit scelerisque mauris. Pretium vulputate sapien nec sagittis aliquam malesuada. Lectus magna fringilla urna porttitor rhoncus dolor purus. 
+					</p>
+				</div>
 			</section>
 			<section class="booking">
+				<div class="booking__text">
+					<h2 class="booking__h2">
+						Book a discounter tour
+					</h2>
+					<small>Mauris ultrices eros in cursus turpis </small>
+				</div>
+				<div class="booking__form">
+					<form class="booking-form" action="" method="POST">
+						<p class="booking-form__name">
+							<label for="booking-form__name">
+								Name
+							</label>
+							<input id="booking-form__name" type="text" name="name" value="" placeholder="Name">
+						</p>
+						<p class="booking-form__email">
+							<label for="booking-form__email">
+								Email
+							</label>
+							<input id="booking-form__email" type="email" name="email" value="" placeholder="user@mail.com">
+						</p>
+						<button class="button booking-form__button">Send</button>
 
+					</form>
+				</div>
 			</section>
 		</main>
 		<footer class="page-footer">
 			<div class="page-footer__nav">
-
+				<ul class="footer-menu__ul">
+					<li>
+						<a>Home</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Gallery</a>
+					</li>
+					<li>
+						<a href="#">Travel</a>
+					</li>
+				</ul>
 			</div>
 			<div class="page-footer__copyright">
-
+				<p>Business Travel</p>
+				<p>Travel 2019 | All rights reserved</p>
 			</div>
 		</footer>
 	</body>
