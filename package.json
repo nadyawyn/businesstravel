@@ -1,0 +1,22 @@
+{
+  "name": "businesstravel",
+  "version": "1.0.0",
+  "description": "Portfolio project for \"Business Travel\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadyawyn/businesstravel.git"
+  },
+  "author": "nadya podkurkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadyawyn/businesstravel/issues"
+  },
+  "homepage": "https://github.com/nadyawyn/businesstravel#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
