@@ -269,23 +269,51 @@ section p {
   color: #000000;
   text-align: center; }
 
-.photo-gallery__images {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+@media (max-width: 1324px) {
+  .photo-gallery__images {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .photo-gallery__images picture {
+    margin-bottom: 20px;
+    margin-right: 20px; } }
+
+@media (min-width: 1325px) {
+  .photo-gallery__images {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 .photo-gallery__images picture {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-transition: -webkit-box-flex 300ms ease, -webkit-flex 300ms ease;
+  transition: -webkit-box-flex 300ms ease, -webkit-flex 300ms ease;
+  -o-transition: flex 300ms ease;
+  transition: flex 300ms ease;
+  transition: flex 300ms ease, -webkit-box-flex 300ms ease, -webkit-flex 300ms ease, -ms-flex 300ms ease; }
 
 .photo-gallery__pagination {
   display: -webkit-box;
