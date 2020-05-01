@@ -24,5 +24,14 @@
 
 	color: #ffffff;
 
+	letter-spacing: 3px;
+}
+
+.main-nav a {
 	text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+	text-decoration: underline;
 }

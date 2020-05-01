@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   min-width: 320px;
   margin: 0;
@@ -7,7 +10,8 @@ body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #5b5b5c;
   font-style: normal;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  letter-spacing: 1px; }
 
 img {
   max-width: 100%;
@@ -29,6 +33,10 @@ img {
 .disabled {
   cursor: default; }
 
+.button {
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
 .button--empty {
   display: block;
   width: 294px;
@@ -37,8 +45,7 @@ img {
   text-align: center;
   padding-top: 12px;
   color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase; }
+  text-decoration: none; }
 
 .button--black-border {
   display: block;
@@ -48,8 +55,11 @@ img {
   text-align: center;
   padding-top: 12px;
   color: #000000;
-  text-decoration: none;
-  text-transform: uppercase; }
+  text-decoration: none; }
+
+.button--black-border:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
 
 .button--grey {
   background-color: #dddcdc;
@@ -59,6 +69,22 @@ img {
   width: 222px;
   height: 60px;
   border: none; }
+
+.button--grey:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #ffffff; }
+
+.button--dark-grey {
+  background-color: #3a4047;
+  border: 2px solid #7a7a7a;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.button--dark-grey:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #eeeeee; }
 
 .main-nav,
 .page-header__logo,
@@ -77,12 +103,15 @@ section {
   display: block;
   text-align: center;
   font-size: 28px;
-  color: #5b5b5c; }
+  color: #5b5b5c;
+  letter-spacing: 3px;
+  letter-spacing: 3px; }
 
 .section-h2 {
   font-size: 22px;
   color: #c4c4c4;
-  font-weight: normal; }
+  font-weight: normal;
+  letter-spacing: 3px; }
 
 .section__caption {
   text-transform: uppercase;
@@ -146,13 +175,18 @@ section p {
   font-size: 30px;
   font-weight: normal;
   display: block;
-  margin-top: 40px; }
+  margin-top: 40px;
+  letter-spacing: 5px; }
 
 .page-header__link {
   position: absolute;
   top: 120px;
   left: 50%;
   margin-left: -147px; }
+
+.page-header__link:hover {
+  -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); }
 
 .page-header__social {
   position: absolute;
@@ -191,7 +225,13 @@ section p {
 .page-header__social a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px; }
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-decoration: none; }
+
+.page-header__social a:hover,
+.page-header__social a:focus {
+  text-decoration: underline; }
 
 .main-nav {
   display: block;
@@ -228,7 +268,14 @@ section p {
   padding-top: 42px;
   padding-bottom: 42px;
   color: #ffffff;
+  letter-spacing: 3px; }
+
+.main-nav a {
   text-decoration: none; }
+
+.main-nav a:hover,
+.main-nav a:focus {
+  text-decoration: underline; }
 
 .about__wrapper {
   display: -webkit-box;
@@ -475,11 +522,7 @@ section p {
 
 .booking-form__button {
   width: 240px;
-  height: 66px;
-  background-color: #3a4047;
-  border: 2px solid #7a7a7a;
-  color: #ffffff;
-  text-transform: uppercase; }
+  height: 66px; }
 
 .page-footer {
   width: 100%;
@@ -524,7 +567,13 @@ section p {
 
 .page-footer__nav a {
   text-decoration: none;
-  color: #000000; }
+  color: #000000;
+  letter-spacing: 2px; }
+
+.page-footer__nav a:hover,
+.page-footer__nav a:focus {
+  text-decoration: underline;
+  color: #666666; }
 
 .page-footer__copyright {
   width: 570px;

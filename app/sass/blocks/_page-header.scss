@@ -62,6 +62,7 @@
 	font-weight: normal;
 	display: block;
 	margin-top: 40px;
+	letter-spacing: 5px;
 }
 
 .page-header__link {
@@ -69,6 +70,10 @@
 	top:120px;
 	left:50%;
 	margin-left: -147px;
+}
+
+.page-header__link:hover {
+    box-shadow: 0 0 30px rgba(255,255,255,0.3); 
 }
 
 .page-header__social {
@@ -98,5 +103,12 @@
 	color: #ffffff;
 	text-decoration: none;
 	font-size: 20px;
+	letter-spacing: 4px;
+
+	text-decoration: none;
 }
 
+.page-header__social a:hover,
+.page-header__social a:focus {
+	text-decoration: underline;
+}

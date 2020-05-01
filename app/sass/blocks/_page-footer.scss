@@ -22,6 +22,14 @@
 .page-footer__nav a {
 	text-decoration: none;
 	color: #000000;
+
+	letter-spacing: 2px;
+}
+
+.page-footer__nav a:hover,
+.page-footer__nav a:focus {
+	text-decoration: underline;
+	color: #666666;
 }
 
 .page-footer__copyright {

@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	min-width: 320px;
@@ -9,6 +12,8 @@ body {
 	color: #5b5b5c;
 	font-style: normal;
 	background-color: $bg-color;
+
+	letter-spacing: 1px;
 }
 
 img {
@@ -36,6 +41,10 @@ img {
 	cursor:default;
 }
 
+.button {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
 
 .button--empty {
 	display: block;
@@ -47,8 +56,6 @@ img {
 
 	color: #ffffff;
 	text-decoration: none;
-
-	text-transform: uppercase;
 }
 .button--black-border {
 	display: block;
@@ -61,8 +68,12 @@ img {
 	color: #000000;
 	text-decoration: none;
 
-	text-transform: uppercase;
 }
+
+.button--black-border:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
 .button--grey {
 	background-color: #dddcdc;
 	color: #000000;
@@ -71,6 +82,22 @@ img {
 	width: 222px;
 	height: 60px;
 	border: none;
+}
+.button--grey:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+	color: #ffffff;
+}
+
+.button--dark-grey {
+	background-color: #3a4047;
+	border: 2px solid #7a7a7a;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.button--dark-grey:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+	color: #eeeeee;
 }
 
 .main-nav, 
@@ -93,12 +120,15 @@ section {
 	text-align: center;
 	font-size: 28px;
 	color: #5b5b5c;
+	letter-spacing: 3px;
+	letter-spacing: 3px;
 }
 
 .section-h2 {
 	font-size: 22px;
 	color: #c4c4c4;
 	font-weight: normal;
+	letter-spacing: 3px;
 }
 .section__caption {
 	text-transform: uppercase;
