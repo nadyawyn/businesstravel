@@ -32,6 +32,11 @@ img {
 	overflow: hidden;
 }
 
+.disabled {
+	cursor:default;
+}
+
+
 .button--empty {
 	display: block;
 	width: 294px;
@@ -111,6 +116,7 @@ section p {
 	padding-right: 36px;
 	margin-bottom: 50px;
 }
+
 
 @import "blocks/_page-header.scss";
 @import "blocks/_main-nav.scss";
