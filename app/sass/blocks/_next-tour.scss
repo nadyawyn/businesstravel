@@ -1,10 +1,19 @@
-.next-tour__wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
-}
-.next-tour__picture,
-.next-tour__text {
-	flex-basis: 45%;
+
+//Styles for Mobile
+
+
+//Styles for Desktop
+
+@media(min-width:$desktop-width){
+
+	.next-tour__wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.next-tour__picture,
+	.next-tour__text {
+		flex-basis: 45%;
+	}
 }

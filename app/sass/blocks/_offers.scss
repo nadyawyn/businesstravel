@@ -1,24 +1,33 @@
-.offers__wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
+//Styles for Mobile
 
-.offers__item {
-	flex-basis: 822px;
 
-}
+//Styles for Desktop
 
-.offers__h3 {
-	text-transform: uppercase;
-	font-size: 19px;
-	color: #000000;
-	margin-bottom: 55px;
-}
+@media(min-width:$desktop-width){
 
-.offers__text {
-	font-size: 19px;
-	color: #848484;
-	padding-right: 151px;
-	margin-bottom: 82px;
+	.offers__wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	.offers__item {
+		flex-basis: 822px;
+
+	}
+
+	.offers__h3 {
+		text-transform: uppercase;
+		font-size: 19px;
+		color: #000000;
+		margin-bottom: 55px;
+	}
+
+	.offers__text {
+		font-size: 19px;
+		color: #848484;
+		padding-right: 151px;
+		margin-bottom: 82px;
+	}
+
 }

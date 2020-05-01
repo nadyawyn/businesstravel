@@ -2,25 +2,25 @@ html {
 	scroll-behavior: smooth;
 }
 
+//Styles for Mobile
 body {
 	min-width: 320px;
 	margin: 0;
 	padding: 0;
-	font-size: 22px; 
+
+	font-size: 16px; 
 	line-height: 1.5em;
 	font-family: "Montserrat", Arial, Helvetica, sans-serif;
 	color: #5b5b5c;
 	font-style: normal;
-	background-color: $bg-color;
-
 	letter-spacing: 1px;
-}
 
+	background-color: $bg-color;
+}
 img {
 	max-width: 100%;
 	height: auto; 
 }
-
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 
@@ -41,74 +41,9 @@ img {
 	cursor:default;
 }
 
-.button {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-.button--empty {
-	display: block;
-	width: 294px;
-	height: 43px;
-	border: 2px solid #ffffff;
-	text-align: center;
-	padding-top: 12px;
-
-	color: #ffffff;
-	text-decoration: none;
-}
-.button--black-border {
-	display: block;
-	width: 294px;
-	height: 43px;
-	border: 2px solid #000000;
-	text-align: center;
-	padding-top: 12px;
-
-	color: #000000;
-	text-decoration: none;
-
-}
-
-.button--black-border:hover {
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.button--grey {
-	background-color: #dddcdc;
-	color: #000000;
-	font-size: 16px;
-	text-transform: uppercase;
-	width: 222px;
-	height: 60px;
-	border: none;
-}
-.button--grey:hover {
-	box-shadow: 0 0 10px rgba(0,0,0,0.2); 
-	color: #ffffff;
-}
-
-.button--dark-grey {
-	background-color: #3a4047;
-	border: 2px solid #7a7a7a;
-	color: #ffffff;
-	text-transform: uppercase;
-}
-
-.button--dark-grey:hover {
-	box-shadow: 0 0 10px rgba(0,0,0,0.2); 
-	color: #eeeeee;
-}
-
-.main-nav, 
-.page-header__logo,
-.page-header__link {
-	z-index: 999;
-}
-
 .page-main {
-	padding-left: 123px;
-	padding-right: 123px;
+	padding-left: 23px;
+	padding-right: 23px;
 	margin-top: 68px;
 }
 
@@ -118,21 +53,21 @@ section {
 .section-intro {
 	display: block;
 	text-align: center;
-	font-size: 28px;
+	font-size: 14px;
 	color: #5b5b5c;
-	letter-spacing: 3px;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
+	letter-spacing: 1px;
 }
-
 .section-h2 {
-	font-size: 22px;
+	font-size: 14px;
 	color: #c4c4c4;
 	font-weight: normal;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
+
 .section__caption {
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 24px;
 	color:#000000;
 	font-weight: normal;
 }
@@ -143,10 +78,45 @@ section {
 
 section p {
 	color: #5b5b5c;
-	padding-right: 36px;
-	margin-bottom: 50px;
 }
 
+//Styles for Desktop
+
+@media(min-width:$desktop-width){
+
+	body {
+		font-size: 22px; 
+		line-height: 1.5em;
+		color: #5b5b5c;
+	}
+
+	.main-nav, 
+	.page-header__logo,
+	.page-header__link {
+		z-index: 999;
+	}
+	.page-main {
+		padding-left: 123px;
+		padding-right: 123px;
+	}
+	.section-intro {
+		font-size: 28px;
+		letter-spacing: 3px;
+		letter-spacing: 3px;
+	}
+	.section-h2 {
+		font-size: 22px;
+		letter-spacing: 3px;
+	}
+	.section__caption {
+		font-size: 30px;
+	}
+	section p {
+		padding-right: 36px;
+		margin-bottom: 50px;
+	}
+
+}
 
 @import "blocks/_page-header.scss";
 @import "blocks/_main-nav.scss";
@@ -156,3 +126,4 @@ section p {
 @import "blocks/_next-tour.scss";
 @import "blocks/_booking.scss";
 @import "blocks/_page-footer.scss";
+@import "_buttons.scss";

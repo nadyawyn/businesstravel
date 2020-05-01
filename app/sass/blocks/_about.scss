@@ -1,14 +1,23 @@
-.about__wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
-}
-.about__text
-{
-	flex-basis: 45%;
-}
+//Styles for Mobile
 
-.about__text {
-	padding-right: 65px;
+
+//Styles for Desktop
+
+@media(min-width:$desktop-width){
+
+	.about__wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.about__text,
+	.about__picture
+	{
+		flex-basis: 45%;
+	}
+
+	.about__text {
+		padding-right: 65px;
+	}
 }
