@@ -4,15 +4,11 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.about__text,
+.about__text
 {
 	flex-basis: 45%;
 }
 
 .about__text {
 	padding-right: 65px;
-}
-
-.about__picture {
-	text-align: center;
 }

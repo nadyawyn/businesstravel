@@ -174,8 +174,7 @@ section p {
 .page-header__h1 span {
   font-size: 30px;
   font-weight: normal;
-  display: block;
-  margin-top: 40px;
+  line-height: 3.5;
   letter-spacing: 5px; }
 
 .page-header__link {
@@ -303,9 +302,6 @@ section p {
 
 .about__text {
   padding-right: 65px; }
-
-.about__picture {
-  text-align: center; }
 
 .photos {
   margin-top: 117px; }
