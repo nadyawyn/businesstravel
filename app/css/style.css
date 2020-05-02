@@ -373,6 +373,8 @@ section p {
     text-decoration: underline; } }
 
 @media (min-width: 769px) {
+  .main-nav__toggle {
+    display: none; }
   .main-nav {
     display: block;
     width: 100%;
