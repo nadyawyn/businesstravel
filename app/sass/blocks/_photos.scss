@@ -1,5 +1,17 @@
 //Styles for Mobile
+.photos__h2, .offers__h2 {
+	text-transform: uppercase;
+	font-size: 32px;
+	color: #000000;
+	text-align: center;
+	line-height: 1em;
+}
 
+@media(max-width: $tablet-width) {
+	.photo-gallery__pagination {
+		display: none;
+	}
+}
 
 //Styles for Desktop
 
@@ -8,12 +20,7 @@
 	.photos {
 		margin-top: 117px;
 	}
-	.photos__h2, .offers__h2 {
-		text-transform: uppercase;
-		font-size: 32px;
-		color: #000000;
-		text-align: center;
-	}
+
 	@media(max-width:1324px){
 		.photo-gallery__images {
 			display: flex;

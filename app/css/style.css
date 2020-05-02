@@ -68,6 +68,10 @@ section {
 section p {
   color: #5b5b5c; }
 
+@media (max-width: 768px) {
+  .section-intro br {
+    display: none; } }
+
 @media (min-width: 1200px) {
   body {
     font-size: 22px;
@@ -369,6 +373,9 @@ section p {
   .main-nav a:focus {
     text-decoration: underline; } }
 
+.about__picture {
+  margin-top: 30px; }
+
 @media (min-width: 1200px) {
   .about__wrapper {
     display: -webkit-box;
@@ -396,14 +403,20 @@ section p {
   .about__text {
     padding-right: 65px; } }
 
+.photos__h2, .offers__h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  line-height: 1em; }
+
+@media (max-width: 768px) {
+  .photo-gallery__pagination {
+    display: none; } }
+
 @media (min-width: 1200px) {
   .photos {
-    margin-top: 117px; }
-  .photos__h2, .offers__h2 {
-    text-transform: uppercase;
-    font-size: 32px;
-    color: #000000;
-    text-align: center; } }
+    margin-top: 117px; } }
 
 @media (min-width: 1200px) and (max-width: 1324px) {
   .photo-gallery__images {
@@ -526,47 +539,102 @@ section p {
     padding-right: 151px;
     margin-bottom: 82px; } }
 
+.next-tour__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -50px; }
+
+.next-tour__text {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1; }
+
 @media (min-width: 1200px) {
   .next-tour__wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    margin-top: 0; }
   .next-tour__picture,
   .next-tour__text {
     -webkit-flex-basis: 45%;
         -ms-flex-preferred-size: 45%;
             flex-basis: 45%; } }
 
-@media (min-width: 1200px) {
+.booking {
+  width: 100%;
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media (max-width: 768px) {
   .booking {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding-top: 20px;
+    padding-bottom: 50px; }
+  .booking__h2, .booking__text small {
+    display: block;
+    margin: 10px auto;
+    text-align: center; }
+  .booking-form {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    margin: 0 auto;
+    text-align: center; }
+  .booking-form__name, .booking-form__email {
+    width: 250px;
+    height: 8px;
+    padding: 25px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; }
+  .booking-form__button {
+    width: 304px;
+    height: 66px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 1200px) {
+  .booking {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    background-color: #f4f4f4;
-    width: 100%;
-    /*
-		padding-left: 123px;
-		padding-right: 123px; */
     padding-top: 150px;
     padding-bottom: 150px; }
   .booking__text {
@@ -603,6 +671,47 @@ section p {
   .booking-form__button {
     width: 240px;
     height: 66px; } }
+
+.page-footer__nav a:hover,
+.page-footer__nav a:focus {
+  text-decoration: underline;
+  color: #666666; }
+
+.page-footer__copyright {
+  text-align: center;
+  margin-top: 64px;
+  text-transform: uppercase;
+  line-height: 0.8em; }
+
+@media (max-width: 768px) {
+  .page-footer {
+    padding-top: 30px; }
+  .page-footer__nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-transform: uppercase;
+    text-align: center; }
+  .page-footer__nav a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    letter-spacing: 2px;
+    padding: 10px; } }
 
 @media (min-width: 1200px) {
   .page-footer {
@@ -647,16 +756,14 @@ section p {
     text-decoration: none;
     color: #000000;
     letter-spacing: 2px; }
-  .page-footer__nav a:hover,
-  .page-footer__nav a:focus {
-    text-decoration: underline;
-    color: #666666; }
   .page-footer__copyright {
-    width: 570px;
-    text-align: center;
-    margin-top: 64px;
-    text-transform: uppercase;
-    line-height: 0.8em; } }
+    width: 570px; } }
+
+@media (max-width: 768px) {
+  .button--black-border {
+    margin: 0 auto; }
+  .button--grey {
+    margin-bottom: 30px; } }
 
 .button {
   text-transform: uppercase;

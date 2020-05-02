@@ -1,16 +1,23 @@
-
 //Styles for Mobile
+.next-tour__wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
 
+	margin-top: -50px;
+}
+
+.next-tour__text {
+	order: -1;
+}
 
 //Styles for Desktop
 
 @media(min-width:$desktop-width){
 
 	.next-tour__wrapper {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		align-items: center;
+		margin-top: 0;
 	}
 	.next-tour__picture,
 	.next-tour__text {

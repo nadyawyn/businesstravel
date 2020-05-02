@@ -1,3 +1,17 @@
+//Styles for mobile
+@media(max-width:$tablet-width) {
+
+	.button--black-border {
+		margin: 0 auto;
+	}
+
+	.button--grey {
+		margin-bottom: 30px;
+	}
+}
+
+
+//General styles
 .button {
 	text-transform: uppercase;
 	letter-spacing: 2px;

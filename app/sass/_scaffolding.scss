@@ -80,6 +80,13 @@ section p {
 	color: #5b5b5c;
 }
 
+@media(max-width: $tablet-width) {
+	.section-intro br {
+		display: none;
+	}
+}
+
+
 //Styles for Desktop
 
 @media(min-width:$desktop-width){
