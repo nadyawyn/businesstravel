@@ -107,9 +107,9 @@
 //Styles for Tablet 
 
 @media(min-width: ($tablet-width + 1px)){
-	//.main-nav__toggle {
-	//	display: none;
-	//}
+	.main-nav__toggle {
+	display: none;
+	}
 
 
 	.main-nav {
