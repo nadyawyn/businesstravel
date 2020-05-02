@@ -11,6 +11,19 @@
 .next-tour__text {
 	order: -1;
 }
+//Styles for Tablet
+
+@media(min-width:$tablet-width) {
+	.next-tour__picture,
+	.next-tour__text {
+		flex-basis: 45%;
+	}
+
+	.next-tour__text {
+		order: 2;
+	}
+}
+
 
 //Styles for Desktop
 

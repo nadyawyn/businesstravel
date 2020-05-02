@@ -5,10 +5,9 @@
 		margin-top: 30px;
 	}
 
+//Styles for Tablet
 
-//Styles for Desktop
-
-@media(min-width:$desktop-width){
+@media(min-width:$tablet-width) {
 
 	.about__wrapper {
 		display: flex;
@@ -25,4 +24,10 @@
 	.about__text {
 		padding-right: 65px;
 	}
+}
+
+//Styles for Desktop
+
+@media(min-width:$desktop-width){
+
 }

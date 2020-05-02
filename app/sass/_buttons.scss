@@ -1,15 +1,15 @@
 //Styles for mobile
-@media(max-width:$tablet-width) {
+@media(max-width:$desktop-width) {
 
 	.button--black-border {
 		margin: 0 auto;
 	}
 
-	.button--grey {
-		margin-bottom: 30px;
-	}
 }
 
+.button--grey {
+	margin-bottom: 30px;
+}
 
 //General styles
 .button {

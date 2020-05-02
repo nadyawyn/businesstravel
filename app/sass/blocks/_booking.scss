@@ -3,6 +3,14 @@
 	width: 100%;
 	background-color: #f4f4f4;
 	display: flex;
+	box-sizing: border-box;
+	padding-left: 123px;
+	padding-right: 123px;
+}
+.booking-form__name, 
+.booking-form__email {
+	border: 2px solid #7a7a7a;
+	background: none;
 }
 
 @media(max-width: $tablet-width) {
@@ -48,6 +56,41 @@
 
 }
 
+//Styles for Tablet
+
+@media(min-width: ($tablet-width + 1px)) and (max-width: $desktop-width) {
+	.booking {
+		flex-flow: row wrap;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.booking__text {
+		display: block;
+		width: auto;
+		margin-left: 23px;
+		padding-left: 60px;
+	}
+	.booking-form {
+		width: 50%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		margin-left: 60px;
+	}
+
+	.booking-form__name, .booking-form__email {
+		width: 306px;
+		height: 8px;
+		padding: 26px;
+		margin-bottom: 15px;
+	}
+
+	.booking-form__button {
+		width: 240px;
+		height: 66px;
+	}
+
+}
 
 
 //Styles for Desktop
@@ -62,8 +105,6 @@
 	.booking__text {
 		display: block;
 		width: 530px;
-		margin-left: 123px;
-		padding-left: 60px;
 	}
 
 	.booking__h2 {
@@ -82,6 +123,7 @@
 		flex-flow: row wrap;
 		justify-content: space-between;
 		margin-top: 28px;
+	
 	}
 
 	.booking-form__name, .booking-form__email {

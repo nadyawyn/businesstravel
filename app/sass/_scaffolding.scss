@@ -91,7 +91,7 @@ section p {
 @media(min-width:$tablet-width){
 
 
-	
+
 }
 
 //Styles for Desktop
@@ -113,6 +113,16 @@ section p {
 		padding-left: 123px;
 		padding-right: 123px;
 	}
+
+	@media (min-width:2000px) {
+		.page-main {
+			padding-left: 300px;
+			padding-right: 300px;
+		}
+	
+		
+	}
+
 	.section-intro {
 		font-size: 28px;
 		letter-spacing: 3px;

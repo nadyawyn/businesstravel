@@ -12,6 +12,21 @@
 		display: none;
 	}
 }
+//Styles for Tablet 
+@media(min-width:($tablet-width + 1px)) and (max-width: $desktop-width){
+	.photo-gallery__images {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		text-align: center;
+	}
+	.photo-gallery__pagination {
+		display: none;
+	}
+
+}
+
 
 //Styles for Desktop
 
