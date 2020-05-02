@@ -72,7 +72,7 @@ section p {
   .section-intro br {
     display: none; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   body {
     font-size: 22px;
     line-height: 1.5em;
@@ -85,12 +85,12 @@ section p {
     padding-left: 123px;
     padding-right: 123px; } }
 
-@media (min-width: 1200px) and (min-width: 2000px) {
+@media (min-width: 1350px) and (min-width: 2000px) {
   .page-main {
     padding-left: 300px;
     padding-right: 300px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .section-intro {
     font-size: 28px;
     letter-spacing: 3px;
@@ -204,7 +204,7 @@ section p {
   .page-header__social a:focus {
     text-decoration: underline; } }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1350px) {
   .page-header__logo {
     top: 170px; }
   .page-header__social {
@@ -246,7 +246,7 @@ section p {
   .page-header__social a:focus {
     text-decoration: underline; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .page-header {
     height: 1082px; }
   .page-header__cover {
@@ -423,7 +423,7 @@ section p {
   .main-nav a:focus {
     text-decoration: underline; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .main-nav {
     display: block;
     width: 100%;
@@ -505,7 +505,7 @@ section p {
   .photo-gallery__pagination {
     display: none; } }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1350px) {
   .photo-gallery__images {
     display: -webkit-box;
     display: -webkit-flex;
@@ -527,11 +527,11 @@ section p {
   .photo-gallery__pagination {
     display: none; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .photos {
     margin-top: 117px; } }
 
-@media (min-width: 1200px) and (max-width: 1324px) {
+@media (min-width: 1350px) and (max-width: 1324px) {
   .photo-gallery__images {
     display: -webkit-box;
     display: -webkit-flex;
@@ -550,7 +550,7 @@ section p {
     margin-bottom: 20px;
     margin-right: 20px; } }
 
-@media (min-width: 1200px) and (min-width: 1325px) {
+@media (min-width: 1350px) and (min-width: 1325px) {
   .photo-gallery__images {
     display: -webkit-box;
     display: -webkit-flex;
@@ -566,7 +566,7 @@ section p {
         -ms-flex-pack: justify;
             justify-content: space-between; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .photo-gallery__images picture {
     margin-bottom: 30px;
     -webkit-box-flex: 1;
@@ -622,7 +622,7 @@ section p {
   .photo-gallery__page-link.disabled {
     color: #c5c5c5; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .offers__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -690,7 +690,7 @@ section p {
         -ms-flex-order: 2;
             order: 2; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .next-tour__wrapper {
     margin-top: 0; }
   .next-tour__picture,
@@ -707,9 +707,7 @@ section p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 123px;
-  padding-right: 123px; }
+          box-sizing: border-box; }
 
 .booking-form__name,
 .booking-form__email {
@@ -762,7 +760,7 @@ section p {
     margin-left: auto;
     margin-right: auto; } }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1350px) {
   .booking {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -801,8 +799,10 @@ section p {
     width: 240px;
     height: 66px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .booking {
+    padding-left: 123px;
+    padding-right: 123px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row wrap;
@@ -854,7 +854,7 @@ section p {
   text-transform: uppercase;
   line-height: 0.8em; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .page-footer {
     padding-top: 30px; }
   .page-footer__nav ul {
@@ -884,7 +884,7 @@ section p {
     letter-spacing: 2px;
     padding: 10px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .page-footer {
     width: 100%;
     padding-top: 93px;
@@ -930,7 +930,7 @@ section p {
   .page-footer__copyright {
     width: 570px; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .button--black-border {
     margin: 0 auto; } }
 

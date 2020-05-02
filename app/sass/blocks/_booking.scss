@@ -4,8 +4,6 @@
 	background-color: #f4f4f4;
 	display: flex;
 	box-sizing: border-box;
-	padding-left: 123px;
-	padding-right: 123px;
 }
 .booking-form__name, 
 .booking-form__email {
@@ -97,6 +95,8 @@
 
 @media(min-width:$desktop-width){
 	.booking {
+		padding-left: 123px;
+		padding-right: 123px;
 		flex-flow: row wrap;
 		padding-top: 150px;
 		padding-bottom: 150px;
@@ -132,6 +132,7 @@
 		padding: 26px;
 		margin-right: 65px;
 	}
+
 
 	.booking-form__button {
 		width: 240px;
