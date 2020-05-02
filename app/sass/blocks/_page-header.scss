@@ -68,6 +68,8 @@
 }
 
 @media(max-width: $tablet-width) {
+	
+
 	.page-header__social {
 		position: absolute;
 		z-index: 999;
@@ -104,6 +106,53 @@
 	.page-header__social a:focus {
 		text-decoration: underline;
 	}	
+}
+
+//Styles for Tablet
+
+@media (min-width:$tablet-width) and (max-width: $desktop-width) {
+	.page-header__logo {
+		top:170px;
+	}
+
+	.page-header__social {
+		position: absolute;
+		z-index: 999;
+		left: 0;
+		top: 480px;
+		width: 100%;
+	}
+	.page-header__social ul {
+		@include reset-list;
+
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		padding: 50px;
+
+
+		background-color: rgba(0,0,0,0.3);
+	}
+	
+	.page-header__social ul li {
+		flex-basis: auto;
+	}
+	.page-header__social a {
+		color: #ffffff;
+		text-decoration: none;
+		font-size: 14px;
+		letter-spacing: 3px;
+	
+		text-decoration: none;
+	}
+	
+	.page-header__social a:hover,
+	.page-header__social a:focus {
+		text-decoration: underline;
+	}	
+
+
 }
 
 

@@ -104,6 +104,54 @@
 
 }
 
+//Styles for Tablet 
+
+@media(min-width: ($tablet-width + 1px)){
+	//.main-nav__toggle {
+	//	display: none;
+	//}
+
+
+	.main-nav {
+		display: block;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		z-index: 999;
+	}
+	.main-nav ul {
+		@include reset-list;
+	
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	
+		margin: 0 auto;
+		width: 433px;
+	
+		font-size: 20px;
+	}
+	.main-nav__item {
+		flex-basis: 20%;
+		display: block;
+		padding-top: 22px;
+		padding-bottom: 22px;
+	
+		color: #ffffff;
+	
+		letter-spacing: 3px;
+	}
+	
+	.main-nav a {
+		text-decoration: none;
+	}
+	
+	.main-nav a:hover,
+	.main-nav a:focus {
+		text-decoration: underline;
+	}
+
+}
 
 
 //Styles for Desktop
@@ -111,10 +159,6 @@
 @media(min-width:$desktop-width){
 
 
-	
-	.main-nav__toggle {
-		display: none;
-	}
 	.main-nav {
 		display: block;
 		width: 100%;
