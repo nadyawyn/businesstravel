@@ -1,9 +1,120 @@
 //Styles for Mobile
+@media(max-width: $tablet-width) {
+	.main-nav {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+	
+		z-index: 999;
+	
+		display: block;
+		width: 100%;
+	}
+	.main-nav__toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		width: 50px;
+		height: 50px;
+		border: 2px solid #ffffff;
+		background: none;
+	}
+	.main-nav--closed .main-nav__toggle::before {
+		content: "";
+		width: 40px;
+		height: 2px;
+		background-color: #ffffff;
+	
+		position: absolute;
+		top: 11px;
+		left: 3px;
+	
+		box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff; 
+	}
+	
+	.main-nav--closed .main-nav__toggle:active::before{
+		top: 9px;
+		left: 3px;
+	
+		background-color: rgba($color: #ffffff, $alpha: 0.7);
+		box-shadow: 0 12px 0 0 rgba($color:#ffffff, $alpha: 0.7), 0 25px 0 0 rgba($color:#ffffff, $alpha: 0.7); 
+	}
+	
+	.main-nav--closed .main-nav__ul {
+		display: none;
+	}
+	
+	.main-nav--opened .main-nav__toggle::before,
+	.main-nav--opened .main-nav__toggle::after  {
+		content: "";
+		width: 40px;
+		height: 2px;
+		background-color: #ffffff;
+		position: absolute;
+		z-index: 999;
+		top: 22px;
+		left: 3px;
+	}
+	.main-nav--opened .main-nav__toggle::before {
+		transform: rotate(45deg);
+	}
+	.main-nav--opened .main-nav__toggle::after {
+		transform: rotate(-45deg);
+	}
+
+	.main-nav--opened .main-nav__toggle:active::before,
+	.main-nav--opened .main-nav__toggle:active::after {
+		background-color: rgba($color:#ffffff, $alpha: 0.7);
+	}
+
+
+	.main-nav--opened .main-nav__ul {
+		@include reset-list;
+
+		display: block;
+
+		position: absolute;
+		top:-5px;
+		left: 5px;
+		z-index: 990;
+
+		width: 100%;
+
+		text-align: center;
+	}
+
+	.main-nav__item {
+		flex-basis: 20%;
+	
+		color: #ffffff;
+	
+		letter-spacing: 3px;
+	}
+	
+	.main-nav a {
+		text-decoration: none;
+		line-height: 2.5em;
+	}
+	
+	.main-nav a:hover,
+	.main-nav a:focus {
+		text-decoration: underline;
+	}
+
+}
+
 
 
 //Styles for Desktop
 
 @media(min-width:$desktop-width){
+
+
+	
+	.main-nav__toggle {
+		display: none;
+	}
 	.main-nav {
 		display: block;
 		width: 100%;
